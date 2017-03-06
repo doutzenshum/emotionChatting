@@ -1,3 +1,6 @@
+#使用
+这里可以随便起名字，但是密码统一为在Servlet中设置的密码，这样才能出现聊天中的名字，才有意思嘛
+需要说明的是，目前没有登录用户无法发送消息，需要登录后才能发送
 #聊天内容总体存储方式
 1、List<String> OnLineUserList = new ArrayList<String>(); //存储用户的arrayList
 2、static List<String> strSendConentList=new ArrayList<String>();//存储聊天内容的arrayList
