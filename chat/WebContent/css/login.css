@@ -35,7 +35,7 @@ body
 	width:160px;
 	text-align:center;
 	font-size:13px;
-	border:solid 1px #cc3300
+	border:solid 1px #cc3300;
 	margin-top:5px;
 	padding:2px;
 	margin-bottom:5px;
@@ -54,6 +54,6 @@ body
 	padding:2px;
 	width:60px;
 	filter:progid:DXImageTransform.Microsoft.Gradient(
-	GradientType=0,StartColorStr=#ffffff,EndColorStr=#ECE9D8)
+	GradientType=0,StartColorStr=#ffffff,EndColorStr=#ECE9D8);
 	)
 }

@@ -24,6 +24,7 @@ $(function() {
             return false;
         }
     })
+
     //显示上传
      $("#Button3").click(function() { 
         var $upload = $("#file"); 
@@ -31,13 +32,16 @@ $(function() {
         $upload.show();
         $but.show();
     })
-     //显示上传
+
+     //隐藏上传
      $("#Button4").click(function() { 
         var $upload = $("#file"); 
         $upload.hide();
         $(this).hide();
     })
-    $("#Button2").click(function() { //按钮点击事件
+
+    //按钮点击事件
+    $("#Button2").click(function() {
     	$.ajax({
             type: "POST",
             url: "chat",

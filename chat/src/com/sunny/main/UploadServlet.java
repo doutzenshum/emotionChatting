@@ -40,9 +40,9 @@ public class UploadServlet extends HttpServlet {
 		//将接受内容以utf-8接收
 		request.setCharacterEncoding("UTF-8");
 		Date date = new Date();// 日期
-		SimpleDateFormat sdfFileName = new SimpleDateFormat("yyyyMMddHHmmss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
 		//SimpleDateFormat sdfFolder = new SimpleDateFormat("yyMM");
-		String newfileName = sdfFileName.format(date);//格式化日期
+		String newfileName = sdf.format(date);//格式化日期
 		String fileRealPath = "";//真实文件路径
 
 		String fileRealResistPath = "";//保存文件路径
@@ -103,7 +103,7 @@ public class UploadServlet extends HttpServlet {
 								//记录用户上传文件的信息到数据库
 								Class.forName("com.mysql.jdbc.Driver");
 								cnn = DriverManager
-										.getConnection("jdbc:mysql://localhost:3306/file?user=root&password=123");
+										.getConnection("jdbc:mysql://localhost:3306/communitysport?user=root&password=root");
 								String sql="insert into file(user,path,realname) values('"+user+"','"+newfileName+"','"+fileName+"')";
 								
 								pst = cnn.prepareStatement(sql);
